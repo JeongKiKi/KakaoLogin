@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		68D2D93C2BE53332009E04FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2D93B2BE53332009E04FA /* AppDelegate.swift */; };
 		68D2D93E2BE53332009E04FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2D93D2BE53332009E04FA /* SceneDelegate.swift */; };
-		68D2D9402BE53332009E04FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2D93F2BE53332009E04FA /* ViewController.swift */; };
+		68D2D9402BE53332009E04FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2D93F2BE53332009E04FA /* LoginViewController.swift */; };
 		68D2D9432BE53332009E04FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D2D9412BE53332009E04FA /* Main.storyboard */; };
 		68D2D9452BE53333009E04FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D2D9442BE53333009E04FA /* Assets.xcassets */; };
 		68D2D9482BE53333009E04FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D2D9462BE53333009E04FA /* LaunchScreen.storyboard */; };
+		68D2D9522BE536B9009E04FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2D9512BE536B9009E04FA /* LoginView.swift */; };
+		68D2D9552BE5371E009E04FA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 68D2D9542BE5371E009E04FA /* SnapKit */; };
+		C543443D4102D3359F245EC0 /* Pods_KakaoLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51E539CAA992F1B43D56F5A /* Pods_KakaoLogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B3BC641453E31ECCBB0D705 /* Pods-KakaoLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoLogin.release.xcconfig"; path = "Target Support Files/Pods-KakaoLogin/Pods-KakaoLogin.release.xcconfig"; sourceTree = "<group>"; };
 		68D2D9382BE53332009E04FA /* KakaoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D2D93B2BE53332009E04FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68D2D93D2BE53332009E04FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		68D2D93F2BE53332009E04FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68D2D93F2BE53332009E04FA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		68D2D9422BE53332009E04FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68D2D9442BE53333009E04FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68D2D9472BE53333009E04FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68D2D9492BE53333009E04FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D2D9512BE536B9009E04FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		90D5CF82BAA7D64A28FA5382 /* Pods-KakaoLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoLogin.debug.xcconfig"; path = "Target Support Files/Pods-KakaoLogin/Pods-KakaoLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		A51E539CAA992F1B43D56F5A /* Pods_KakaoLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C543443D4102D3359F245EC0 /* Pods_KakaoLogin.framework in Frameworks */,
+				68D2D9552BE5371E009E04FA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				68D2D93A2BE53332009E04FA /* KakaoLogin */,
 				68D2D9392BE53332009E04FA /* Products */,
+				E893FEB1ADBBFD3C07AA2185 /* Pods */,
+				FDB31A4B43D29A77AC52BCEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +69,31 @@
 			children = (
 				68D2D93B2BE53332009E04FA /* AppDelegate.swift */,
 				68D2D93D2BE53332009E04FA /* SceneDelegate.swift */,
-				68D2D93F2BE53332009E04FA /* ViewController.swift */,
+				68D2D93F2BE53332009E04FA /* LoginViewController.swift */,
+				68D2D9512BE536B9009E04FA /* LoginView.swift */,
 				68D2D9412BE53332009E04FA /* Main.storyboard */,
 				68D2D9442BE53333009E04FA /* Assets.xcassets */,
 				68D2D9462BE53333009E04FA /* LaunchScreen.storyboard */,
 				68D2D9492BE53333009E04FA /* Info.plist */,
 			);
 			path = KakaoLogin;
+			sourceTree = "<group>";
+		};
+		E893FEB1ADBBFD3C07AA2185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90D5CF82BAA7D64A28FA5382 /* Pods-KakaoLogin.debug.xcconfig */,
+				0B3BC641453E31ECCBB0D705 /* Pods-KakaoLogin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FDB31A4B43D29A77AC52BCEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A51E539CAA992F1B43D56F5A /* Pods_KakaoLogin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +103,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68D2D94C2BE53333009E04FA /* Build configuration list for PBXNativeTarget "KakaoLogin" */;
 			buildPhases = (
+				112722FA3BCD0976B07B61A9 /* [CP] Check Pods Manifest.lock */,
 				68D2D9342BE53332009E04FA /* Sources */,
 				68D2D9352BE53332009E04FA /* Frameworks */,
 				68D2D9362BE53332009E04FA /* Resources */,
+				D7040A8DB8A8B2C307A3EF70 /* [CP] Embed Pods Frameworks */,
+				6A6F2DD4AF01994327499D16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = KakaoLogin;
+			packageProductDependencies = (
+				68D2D9542BE5371E009E04FA /* SnapKit */,
+			);
 			productName = KakaoLogin;
 			productReference = 68D2D9382BE53332009E04FA /* KakaoLogin.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,9 @@
 				Base,
 			);
 			mainGroup = 68D2D92F2BE53332009E04FA;
+			packageReferences = (
+				68D2D9532BE5371E009E04FA /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 68D2D9392BE53332009E04FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,12 +171,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		112722FA3BCD0976B07B61A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A6F2DD4AF01994327499D16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoLogin/Pods-KakaoLogin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoLogin/Pods-KakaoLogin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoLogin/Pods-KakaoLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7040A8DB8A8B2C307A3EF70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoLogin/Pods-KakaoLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoLogin/Pods-KakaoLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoLogin/Pods-KakaoLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68D2D9342BE53332009E04FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68D2D9402BE53332009E04FA /* ViewController.swift in Sources */,
+				68D2D9522BE536B9009E04FA /* LoginView.swift in Sources */,
+				68D2D9402BE53332009E04FA /* LoginViewController.swift in Sources */,
 				68D2D93C2BE53332009E04FA /* AppDelegate.swift in Sources */,
 				68D2D93E2BE53332009E04FA /* SceneDelegate.swift in Sources */,
 			);
@@ -282,11 +380,13 @@
 		};
 		68D2D94D2BE53333009E04FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D5CF82BAA7D64A28FA5382 /* Pods-KakaoLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5X8MR892Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KakaoLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -294,6 +394,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,11 +410,13 @@
 		};
 		68D2D94E2BE53333009E04FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3BC641453E31ECCBB0D705 /* Pods-KakaoLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5X8MR892Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KakaoLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,6 +424,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +460,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68D2D9532BE5371E009E04FA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68D2D9542BE5371E009E04FA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68D2D9532BE5371E009E04FA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68D2D9302BE53332009E04FA /* Project object */;
 }
