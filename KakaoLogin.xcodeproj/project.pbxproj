@@ -15,6 +15,7 @@
 		68D2D9482BE53333009E04FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D2D9462BE53333009E04FA /* LaunchScreen.storyboard */; };
 		68D2D9522BE536B9009E04FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2D9512BE536B9009E04FA /* LoginView.swift */; };
 		68D2D9552BE5371E009E04FA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 68D2D9542BE5371E009E04FA /* SnapKit */; };
+		68D2D95E2BEB66B4009E04FA /* KakaoProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2D95D2BEB66B4009E04FA /* KakaoProfileViewController.swift */; };
 		C543443D4102D3359F245EC0 /* Pods_KakaoLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51E539CAA992F1B43D56F5A /* Pods_KakaoLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		68D2D9472BE53333009E04FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68D2D9492BE53333009E04FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68D2D9512BE536B9009E04FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		68D2D95D2BEB66B4009E04FA /* KakaoProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoProfileViewController.swift; sourceTree = "<group>"; };
 		90D5CF82BAA7D64A28FA5382 /* Pods-KakaoLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoLogin.debug.xcconfig"; path = "Target Support Files/Pods-KakaoLogin/Pods-KakaoLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		A51E539CAA992F1B43D56F5A /* Pods_KakaoLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				68D2D93B2BE53332009E04FA /* AppDelegate.swift */,
 				68D2D93D2BE53332009E04FA /* SceneDelegate.swift */,
 				68D2D93F2BE53332009E04FA /* LoginViewController.swift */,
+				68D2D95D2BEB66B4009E04FA /* KakaoProfileViewController.swift */,
 				68D2D9512BE536B9009E04FA /* LoginView.swift */,
 				68D2D9412BE53332009E04FA /* Main.storyboard */,
 				68D2D9442BE53333009E04FA /* Assets.xcassets */,
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68D2D95E2BEB66B4009E04FA /* KakaoProfileViewController.swift in Sources */,
 				68D2D9522BE536B9009E04FA /* LoginView.swift in Sources */,
 				68D2D9402BE53332009E04FA /* LoginViewController.swift in Sources */,
 				68D2D93C2BE53332009E04FA /* AppDelegate.swift in Sources */,

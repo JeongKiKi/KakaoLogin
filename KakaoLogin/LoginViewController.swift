@@ -19,7 +19,6 @@ class LoginViewController: UIViewController {
     override func loadView() {
         super.loadView()
         view.addSubview(loginView)
-        loginView.loginBtn.addTarget(self, action: #selector(LoginViewController.loginButtonTapped), for: .touchUpInside)
         loginView.kakaoLoginBtn.addTarget(self, action: #selector(LoginViewController.kakaoLoginButtonTapped), for: .touchUpInside)
         loginView.snp.makeConstraints {
             $0.top.equalTo(self.view)
@@ -27,12 +26,9 @@ class LoginViewController: UIViewController {
         }
     }
 
-    @objc func loginButtonTapped() {
-        print("로그인 버튼 눌림")
-    }
-
     @objc func kakaoLoginButtonTapped() {
         print("kakaoBtn pressed")
+        // 카카오톡이 있는 경우 카카오톡으로 로그인
         if UserApi.isKakaoTalkLoginAvailable() {
             UserApi.shared.loginWithKakaoTalk { oauthToken, error in
                 if let error = error {
@@ -43,11 +39,24 @@ class LoginViewController: UIViewController {
                 }
             }
         } else {
+            // 카카오톡이 없는 경우 카카오 계정으로 로그인
             UserApi.shared.loginWithKakaoAccount { oauthToken, error in
                 if let error = error {
                     print(error)
                 } else {
                     print("카카오톡 로그인 성공 - 카카오 계정으로 로그인")
+                    // 사용자의 정보를 가져오는 로직
+                    UserApi.shared.me { user, error in
+                        if let error = error {
+                            print(error)
+                        }
+                        guard let name = user?.kakaoAccount?.profile?.nickname else { return }
+                        let sc = KakaoProfileViewController()
+                        sc.kakaoName = name
+                        sc.modalPresentationStyle = .fullScreen
+                        self.navigationController?.pushViewController(sc, animated: true)
+                    }
+
                     _ = oauthToken
                 }
             }
