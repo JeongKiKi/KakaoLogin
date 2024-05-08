@@ -15,6 +15,6 @@ cocoapods를 이용하여 kakaoSDK install
 <img src="https://github.com/JeongKiKi/KakaoLogin/assets/125369115/b186785c-0c17-497a-be8c-42a1961dadc3" width="200" height="400"/>
 
 
-
+카카오 계정으로 로그인을 하는 방법을 알게 되었으니 다음 프로젝트에 카카오 로그인과 다른 소셜 로그인을 적용해서 프로젝트를 진행해 봐야겠다!
 
 
