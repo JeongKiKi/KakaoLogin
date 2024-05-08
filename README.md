@@ -1,6 +1,12 @@
 # 카카오계정 로그인 연결해보기
+<br/> <br/> 
+
 ## 카카오SDK 연결 
 cocoapods를 이용하여 kakaoSDK install 
+
+<br/> <br/> 
+
+
 ## 카카오계정 로그인 후 사용자 이름 표기 
 
 
